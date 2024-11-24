@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./src/*"] //@ က သူ့ Component ကိုကြိုက်တဲ့နေရာကနေလှမ်းခေါ်နိုင်အောင်လုပ်ပေးတာ (Combiner Options)
+      }
+    }
+  }
+  
