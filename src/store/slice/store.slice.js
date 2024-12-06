@@ -4,7 +4,7 @@ const initialState = {
   data: [],
   error: false,
   loading: false,
-  value:1
+  value: 1,
 };
 
 const storeSlice = createSlice({
@@ -21,10 +21,9 @@ const storeSlice = createSlice({
       (state.loading = false),
         (state.error = false),
         (state.data = action.payload);
-    }
+    },
   },
 });
 
-export const { processing, mistake, products} =
-  storeSlice.actions;
+export const { processing, mistake, products } = storeSlice.actions;
 export default storeSlice.reducer;

@@ -10,9 +10,9 @@ export const getItems = async () => {
   }
 };
 
-export const deleteItems = async (id) => {
+export const selectItem = async (id) => {
     try{
-        const res = await storeApi.delete(`/products/${id}`)
+        const res = await storeApi.get(`/products/${id}`)
         console.log(res)
         return res;
     }catch(e){
